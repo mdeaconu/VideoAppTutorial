@@ -39,7 +39,7 @@ extension VideoListScreen: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "idCell") as! VideoCell
         let video = videos[indexPath.row]
 
-        cell.setVideoCell(with: video)
+        cell.set(with: video)
         
         return cell
     }
